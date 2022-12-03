@@ -101,4 +101,9 @@ public class SwerveModule {
         driveMotor.set(0);
         turningMotor.set(0);
     }
+
+    public void funData() {
+        SmartDashboard.putNumber("ABS ENCODE[" + absoluteEncoder.getDeviceID() +"]", getAbsoluteEncoderRad()/360);
+    }
+
 }

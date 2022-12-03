@@ -31,10 +31,12 @@ public class RobotContainer {
       () -> true));
 
       configureButtonBindings();
+
   }
 
   private void configureButtonBindings() {
     new JoystickButton(m_pad, 7).whenPressed(() -> swerveSubsystem.zeroHeading());
+
   }
 
   public Command getAutonomousCommand() {
